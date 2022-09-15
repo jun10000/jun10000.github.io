@@ -1,0 +1,82 @@
+baseURL = "https://jun10000.github.io/"
+languageCode = "ja-jp"
+defaultContentLanguage = "ja"
+title = "Jun's GamingBlog"
+theme = "cayman-hugo-theme"
+
+# Google analytics
+googleAnalytics = "G-4C0KCGEGH7"
+
+# Syntax highlighting
+pygmentsCodefences = true
+pygmentsStyle = "pygments"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+[params]
+  # Header text, can be markdown
+  project_name = "Jun's GamingBlog"
+  project_tagline = " "
+
+  # Date format for post list and single pages
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat = "2006/01/02"
+
+  # If true, the CSS/JS for Katex math typesetting are enabled
+  # katex = true
+
+  # Breakpoints
+  large_breakpoint = "64em"
+  medium_breakpoint = "42em"
+
+  # Header colors
+  header_heading_color = "#fff"
+
+  # header_background_color = "#159957"
+  # header_background_color_secondary = "#155799"
+  # https://uigradients.com/#Blu
+  header_background_color = "#E4E5E6"
+  header_background_color_secondary = "#00416A"
+
+  # Text colors
+  section_headings_color = "#159957"
+  body_text_color = "#606c71"
+  body_link_color = "#1e6bb8"
+  blockquote_text_color = "#819198"
+
+  # Code colors
+  code_background_color = "#f3f6fa"
+  code_text_color = "#567482"
+
+  # Border colors
+  border_color = "#dce6f0"
+  table_border_color = "#e9ebec"
+  hr_border_color = "#eff0f1"
+
+[menu]
+  [[menu.nav]]
+    name = "ブログ"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "GitHub"
+    url = "https://github.com/jun10000"
+    weight = 2
+  [[menu.nav]]
+    name = "Twitter"
+    url = "https://twitter.com/Jun12916057"
+    weight = 3
+  [[menu.nav]]
+    name = "このサイトについて"
+    url = "/about/"
+    weight = 4
+
+[markup]
+  [markup.tableOfContents]
+    ordered = true
+    startLevel = 2
+    endLevel = 3
