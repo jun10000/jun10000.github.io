@@ -75,9 +75,7 @@ USB-Cコネクタ（ICのような極細ピッチを持つ）の半田付け作�
 
 ## 付録データ
 
-[OM60_Documents/rev1](https://github.com/jun10000/OM60_Documents/tree/main/rev1)には、下記ファイルを用意しています。
-* SwitchPlate.pdf -> スイッチプレートデータ（汎用）
-* SwitchPlate_Yushakobo_Laser_A4_template_inkscape.svg -> スイッチプレートデータ（遊舎工房の[レーザー加工サービス](https://shop.yushakobo.jp/collections/services/products/lasercut)専用、サイズ：A4）
+https://github.com/jun10000/OM60_Documents/tree/main/rev1
 
 ## 組み立て
 
