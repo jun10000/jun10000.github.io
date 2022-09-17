@@ -3,6 +3,12 @@ title: "Tecseeの新作スイッチ4種を触ってみる"
 date: 2022-05-26T17:50:00+09:00
 tags: ["キースイッチ", "Tecsee"]
 ---
+## 更新情報
+
+|日付|内容|
+|---|---|
+|2022/9/17|リンクの追加、細かな表現の修正を行いました|
+
 ## 前置き
 
 自作キーボードの世界に入ってから、すでに1か月経ちました。  
@@ -15,9 +21,10 @@ tags: ["キースイッチ", "Tecsee"]
 
 ![Imgur](https://i.imgur.com/1FS2ZdAh.jpg)
 
-https://shop.yushakobo.jp/products/3973  
-https://shop.yushakobo.jp/products/4284  
-https://shop.yushakobo.jp/products/4282
+- 左上: [Tecsee Blue Sky Switch (Linear)](https://shop.yushakobo.jp/products/3973?variant=43712972521703)
+- 右上: [Tecsee Blue Sky Switch (Tactile)](https://shop.yushakobo.jp/products/3973?variant=43712972620007)
+- 左下: [Tecsee Ice Mint Switch](https://shop.yushakobo.jp/products/4284)
+- 右下: [Tecsee Ice Milk Switch](https://shop.yushakobo.jp/products/4282)
 
 外観で個人的に気に入っているのはIce Mintになります。
 
@@ -35,11 +42,11 @@ Ice Mintは海、Blue Skyはソーダアイス、Ice Milkはその名の通り�
 ![Imgur](https://i.imgur.com/nGEb6Jjh.jpg)
 
 {{< audio >}}/new-tecsee-switches/tecseesounds.mp3{{< /audio >}}  
-1. [左上] Tecsee Blue Sky Switch (Linear, actuation 63.5gf, pre lubed)  
-1. [右上] Tecsee Blue Sky Switch (Tactile, actuation 63.5gf, pre lubed)  
-1. [左下] Tecsee Ice Mint Switch (Linear, spring 63.5g, non lubed)  
-1. [右下] Tecsee Ice Milk Switch (Tactile, spring 63.5g, slightly pre lubed)  
-1. [中] Tecsee Ice Mint Switch (Linear, spring 63.5g, lubed)  
+- 左上: Tecsee Blue Sky Switch (Linear, actuation 63.5gf, pre lubed)  
+- 右上: Tecsee Blue Sky Switch (Tactile, actuation 63.5gf, pre lubed)  
+- 左下: Tecsee Ice Mint Switch (Linear, spring 63.5g, non lubed)  
+- 右下: Tecsee Ice Milk Switch (Tactile, spring 63.5g, slightly pre lubed)  
+- 中: Tecsee Ice Mint Switch (Linear, spring 63.5g, lubed)  
 
 マイク：iPhone SE (2016) 内臓マイク  
 編集ソフト：Audacity 3.1.3 (ノイズの低減、ノーマライズ適用済み）
