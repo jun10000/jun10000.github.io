@@ -1,6 +1,7 @@
 ---
 title: "Fortitude60 ビルドログ"
 date: 2022-05-07T18:34:00+09:00
+lastmod: 2022-09-21T00:00:00+09:00
 tags: ["fortitude60", "ビルドログ", "遊舎工房"]
 ---
 ## 前置き
@@ -10,7 +11,7 @@ tags: ["fortitude60", "ビルドログ", "遊舎工房"]
 
 ## 遊舎工房とは
 
-https://yushakobo.jp/
+- [遊舎工房 | 自作キーボード＆レーザーカット](https://yushakobo.jp/)
 
 東京・秋葉原にある、自作キーボード専門店。  
 実店舗だけでなく、通販もやっています。  
@@ -18,7 +19,7 @@ https://yushakobo.jp/
 
 ## 遊舎工房ギルドとは
 
-https://yushakobo.jp/news/2022/02/23/guild/
+- [遊舎工房ギルドメンバーを募集します！ | 遊舎工房](https://yushakobo.jp/news/2022/02/23/guild/)
 
 遊舎工房が行っている、商品の魅力などをアピールする（広報）活動です。  
 ブログ、Twitter、YouTubeなどのメディアを通し、各々のメンバーが楽しみながら活動している様子を多くの人に広めることを願って作られました。  
@@ -30,8 +31,8 @@ https://yushakobo.jp/news/2022/02/23/guild/
 ではここから、Fortitude60の組み立てに必要な材料や工具などを紹介していきます。
 基本的には、公式ビルドガイドに沿って進行していきます。
 
-https://github.com/Pekaso/fortitude60/blob/master/Documents/buildguide_jp_v1.1.md  
-https://github.com/Pekaso/fortitude60/blob/master/Documents/buildguide_jp_v1.0.md
+- [Fortitude60 v1.1（Yushakobo Ver.) ビルドガイド](https://github.com/Pekaso/fortitude60/blob/master/Documents/buildguide_jp_v1.1.md)
+- [Fortitude60 v1.0（C94 Limited Edition) ビルドガイド](https://github.com/Pekaso/fortitude60/blob/master/Documents/buildguide_jp_v1.0.md)
 
 基本的にv1.1、LED実装部分はv1.0を参考にします。
 
@@ -321,20 +322,11 @@ MCUは裏表を考えて、PCBとMCU上のシルク（3V3など）を一致さ�
 
 ### MCUへのファームウェア書き込み
 
-まずはPCにビルド環境などをセットアップします。
-
-https://docs.qmk.fm/#/newbs_getting_started
-
-qmk setupまでを実行し、
-
-https://qiita.com/s14stat/items/958fff68ee682208c685
-
-上記ページを参考に、etc/nsswitch.confを確認します。  
-これでファームウェア書き込み環境は構築できました。
-
-https://github.com/Pekaso/fortitude60/blob/master/Documents/firmware_flashing-jp_new.md
-
-上記ページを参考に、ファームウェアの書き込みを行います。
+1. まずはPCにビルド環境などをセットアップします。  
+[Setting Up Your QMK Environment](https://docs.qmk.fm/#/newbs_getting_started)を参考に、qmk setupまでを実行します。
+1. [MSYS2によるWindows 10でのBash環境構築メモ](https://qiita.com/s14stat/items/958fff68ee682208c685)を参考に、etc/nsswitch.confを確認します。
+1. これでファームウェア書き込み環境は構築できました。  
+[Fortitude60 ファームウェア書き込み方法（最新版）](https://github.com/Pekaso/fortitude60/blob/master/Documents/firmware_flashing-jp_new.md)を参考に、ファームウェアの書き込みを行います。
 
 ### キースイッチ x60のテスト
 
@@ -423,8 +415,8 @@ Appleぽい設定、彩度0%、輝度50%
 ここから完全にソフトウェア編です。  
 このままキーボードを使い始めても良いですが、追加設定でより快適になります。
 
-https://docs.qmk.fm/#/syllabus  
-https://zenn.dev/koron/articles/98324ab760e83a
+- [QMK Syllabus](https://docs.qmk.fm/#/syllabus)
+- [QMKでPro Micro用のファームを小さくする](https://zenn.dev/koron/articles/98324ab760e83a)
 
 上記サイトや次のようなものなどを参考に、設定を煮詰めていってください。
 

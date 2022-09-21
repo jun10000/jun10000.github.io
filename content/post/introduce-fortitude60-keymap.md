@@ -1,6 +1,7 @@
 ---
 title: "Fortitude60のキーマップ紹介"
 date: 2022-06-01T17:49:00+09:00
+lastmod: 2022-09-21T00:00:00+09:00
 tags: ["fortitude60", "キーマップ"]
 ---
 ## 更新情報
@@ -151,10 +152,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 下記の情報を参考にさせて頂きました。ありがとうございます！
 
-https://okapies.hateblo.jp/entry/2019/02/02/133953  
-https://gist.github.com/okapies/5d13a174cbb13ce34dbd9faede9d0b71#file-keymap-c-L99-L164
+- [QMK Firmware で Raise/Lower と変換/無変換を同じキーに割り当てる](https://okapies.hateblo.jp/entry/2019/02/02/133953)
+- [ErgoDash keymap implementing “correct” dual role RAISE/LOWER keys without `LT` advanced keycode](https://gist.github.com/okapies/5d13a174cbb13ce34dbd9faede9d0b71)
 
 ## 追記（2022/9/17）
 
-各種ソースファイルの最新版をGitHub上に公開しています。  
-https://github.com/jun10000/fortitude60_keymap
+[各種ソースファイルの最新版](https://github.com/jun10000/fortitude60_keymap)を公開しています。
