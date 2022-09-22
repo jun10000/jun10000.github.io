@@ -35,12 +35,8 @@ pygmentsStyle = "pygments"
 
   # Header colors
   header_heading_color = "#fff"
-
-  # header_background_color = "#159957"
-  # header_background_color_secondary = "#155799"
-  # https://uigradients.com/#Blu
-  header_background_color = "#E4E5E6"
   header_background_color_secondary = "#00416A"
+  header_background_color = "#E4E5E6"
 
   # Text colors
   section_headings_color = "#159957"
