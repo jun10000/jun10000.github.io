@@ -105,9 +105,9 @@ a {
 
 .link-btn {
   display: block;
-  color: rgba(0, 0, 0, 1.0);
-  background-color: rgba($color-blu1, 0.15);
-  border-color: rgba($color-blu1, 0.3);
+  color: rgba(black, 1.0);
+  background-color: rgba($color-blu1, 0.08);
+  border-color: rgba($color-blu1, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
@@ -115,8 +115,8 @@ a {
 
   &:hover {
     text-decoration: none;
-    background-color: rgba($color-blu1, 0.25);
-    border-color: rgba($color-blu1, 0.5);
+    background-color: rgba($color-blu1, 0.2);
+    border-color: rgba($color-blu1, 0.3);
   }
 
   @include large {
@@ -132,6 +132,29 @@ a {
     padding: 0.75rem;
     font-size: 0.9rem;
   }    
+}
+
+.link-btn-inline {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  color: rgba(0, 0, 0, 1.0);
+  background-color: rgba($color-blu1, 0.08);
+  border-color: rgba($color-blu1, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  padding: 0.0rem 0.5rem;
+
+  &:hover {
+    text-decoration: none;
+    background-color: rgba($color-blu1, 0.2);
+    border-color: rgba($color-blu1, 0.3);
+  }
+
+  + .link-btn-inline {
+    margin-left: 0.4rem;
+  }
 }
 
 .page-header {
@@ -231,7 +254,13 @@ a {
     max-width: 100%;
   }
 
-  h1,
+  h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: $section-headings-color;
+  }
+
   h2,
   h3,
   h4,
