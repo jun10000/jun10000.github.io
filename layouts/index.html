@@ -6,7 +6,7 @@
   <li>
     {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
     <a href="{{ .Permalink }}" class="link-btn">
-      {{ .PublishDate.Format $dateFormat }}&nbsp;<br class="autowrap">
+      {{ .PublishDate.Format $dateFormat }}　<br class="autowrap">
       {{ .Title }}
     </a>
   </li>        
