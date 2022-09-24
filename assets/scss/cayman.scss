@@ -2,6 +2,9 @@
 $large-breakpoint: {{ $.Site.Params.large_breakpoint | default "64em" }} !default;
 $medium-breakpoint: {{ $.Site.Params.medium_breakpoint | default "42em" }} !default;
 
+// Theme color
+$theme-color: {{ $.Site.Params.theme_color | default "#155799" }} !default;
+
 // Headers
 $header-heading-color: {{ $.Site.Params.header_heading_color | default "#fff" }} !default; 
 $header-bg-color: {{ $.Site.Params.header_background_color | default "#159957" }} !default;
@@ -21,10 +24,6 @@ $code-text-color: {{ $.Site.Params.code_text_color | default "#567482" }} !defau
 $border-color: {{ $.Site.Params.border_color | default "#dce6f0" }} !default;
 $table-border-color: {{ $.Site.Params.table_border_color | default "#e9ebec" }} !default;
 $hr-border-color: {{ $.Site.Params.hr_border_color | default "#eff0f1" }} !default;
-
-// https://uigradients.com/#Blu
-$color-blu1: #00416A !default;
-$color-blu2: #E4E5E6 !default;
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -59,37 +58,34 @@ body {
 
 a {
   color: $body-link-color;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 1.0);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba($body-link-color, 0);
+  border-color: rgba($body-link-color, 0);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  text-decoration: none;
 
   &:hover {
-    color: rgba(255, 255, 255, 1.0);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba($body-link-color, 0.08);
+    border-color: rgba($body-link-color, 0.08);
   }
+}
 
-  + .btn {
+.btn-nav {
+  display: inline-block;
+  color: rgba(white, 1.0);
+  background-color: rgba(white, 0.08);
+  border-color: rgba(white, 0.2);
+  margin-bottom: 1rem;
+
+  + .btn-nav {
     margin-left: 1rem;
   }
 
   @include large {
     padding: 0.75rem 1rem;
+    font-size: 1rem;
   }
 
   @include medium {
@@ -101,59 +97,67 @@ a {
     padding: 0.75rem;
     font-size: 0.9rem;
   }
-}
-
-.link-btn {
-  display: block;
-  color: rgba(black, 1.0);
-  background-color: rgba($color-blu1, 0.08);
-  border-color: rgba($color-blu1, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    text-decoration: none;
-    background-color: rgba($color-blu1, 0.2);
-    border-color: rgba($color-blu1, 0.3);
+    background-color: rgba(white, 0.2);
+    border-color: rgba(white, 0.3);
   }
+}
+
+.btn-articlelist {
+  display: block;
+  color: rgba(black, 1.0);
+  background-color: rgba($theme-color, 0.08);
+  border-color: rgba($theme-color, 0.2);
+  margin-bottom: 1rem;
 
   @include large {
     padding: 0.75rem 1rem;
+    font-size: 1.2rem;
   }
 
   @include medium {
     padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   @include small {
     padding: 0.75rem;
     font-size: 0.9rem;
-  }    
-}
-
-.link-btn-inline {
-  display: inline-block;
-  margin-bottom: 0.4rem;
-  color: rgba(0, 0, 0, 1.0);
-  background-color: rgba($color-blu1, 0.08);
-  border-color: rgba($color-blu1, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  padding: 0.0rem 0.5rem;
-
-  &:hover {
-    text-decoration: none;
-    background-color: rgba($color-blu1, 0.2);
-    border-color: rgba($color-blu1, 0.3);
   }
 
-  + .link-btn-inline {
+  &:hover {
+    background-color: rgba($theme-color, 0.2);
+    border-color: rgba($theme-color, 0.3);
+  }
+}
+
+.btn-taglist {
+  display: inline-block;
+  color: rgba(black, 1.0);
+  background-color: rgba($theme-color, 0.08);
+  border-color: rgba($theme-color, 0.2);
+  margin-bottom: 0.4rem;
+
+  + .btn-taglist {
     margin-left: 0.4rem;
+  }
+
+  @include large {
+    padding: 0 0.5rem;
+  }
+
+  @include medium {
+    padding: 0 0.5rem;
+  }
+
+  @include small {
+    padding: 0 0.3rem;
+  }
+
+  &:hover {
+    background-color: rgba($theme-color, 0.2);
+    border-color: rgba($theme-color, 0.3);
   }
 }
 
@@ -312,10 +316,6 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
-    
-    li {
-      margin-bottom: 1rem;
-    }
   }
   
   .highlight {

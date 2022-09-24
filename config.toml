@@ -33,6 +33,10 @@ pygmentsStyle = "pygments"
   large_breakpoint = "64em"
   medium_breakpoint = "42em"
 
+  # Theme color
+  # https://uigradients.com/#Blu
+  theme_color = "#00416A"
+
   # Header colors
   header_heading_color = "#fff"
   header_background_color_secondary = "#00416A"
