@@ -1,19 +1,19 @@
-function add_blank_attribute() {
-    var links = document.links;
-
-    for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-       if (links[i].hostname != window.location.hostname) {
-           links[i].target = '_blank';
-       } 
-    }
-}
-
 function start_particles() {
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles-js', '/particles.json', function() {
-        console.log('callback - particles.js config loaded');
+        // Do nothing
     });
 }
 
-window.addEventListener("load", add_blank_attribute);
+function open_image_tab(img) {
+    var page = window.open();
+    page.document.open();
+    page.document.write('<html lang="ja"><head>');
+    page.document.write('<title>' + img + '</title>');
+    page.document.write('</head><body>');
+    page.document.write('<img src="' + img + '" alt="' + img + '">');
+    page.document.write('</body></html>');
+    page.document.close();
+}
+
 window.addEventListener("load", start_particles);
