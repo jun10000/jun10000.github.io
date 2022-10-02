@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /tags/
+Disallow: /post/
+Disallow: /about/
+Sitemap: https://jun10000.github.io/sitemap.xml

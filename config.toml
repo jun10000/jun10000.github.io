@@ -3,9 +3,7 @@ languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 title = "Jun's GamingBlog"
 theme = "cayman-hugo-theme"
-
-# Google analytics
-googleAnalytics = "G-4C0KCGEGH7"
+enableRobotsTXT = true
 
 # Syntax highlighting
 pygmentsCodefences = true
