@@ -14,7 +14,7 @@
         {{ $active = or $active (eq .Name $current.Title) }}
         {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
         {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
-        <a href="{{ .URL }}" class="btn-nav">{{ .Name }}</a>
+        <a href="{{ .URL }}" class="btn-nav"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
       {{ end }}
     </nav>
   </div>

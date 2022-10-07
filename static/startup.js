@@ -1,8 +1,6 @@
 function start_particles() {
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles-js', '/particles.json', function() {
-        // Do nothing
-    });
+    particlesJS.load('particles-js', '/particles.json');
 }
 
 function open_image_tab(img) {
@@ -16,4 +14,4 @@ function open_image_tab(img) {
     page.document.close();
 }
 
-window.addEventListener("load", start_particles);
+window.addEventListener("DOMContentLoaded", start_particles);
