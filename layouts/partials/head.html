@@ -2,11 +2,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{ hugo.Generator }}
-  {{ $summary := trim (.Summary | plainify | htmlUnescape) "\n\r"
-    | default .Title }}
-  <meta name="description" content="{{ $summary }}">
   <link rel="stylesheet" href="{{ "css/normalize.css" | absURL }}">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   {{ $caymanScss := "scss/cayman.scss" }}
   {{ $options := (dict "targetPath" "css/cayman.css") }}
   {{ $caymanCss := resources.Get $caymanScss | resources.ExecuteAsTemplate $caymanScss . | toCSS $options | fingerprint }}
