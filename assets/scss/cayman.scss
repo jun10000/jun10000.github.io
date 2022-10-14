@@ -47,16 +47,16 @@ $hr-border-color: {{ $.Site.Params.hr_border_color | default "#eff0f1" }} !defau
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-stretch: 100%;
-  src: url(/Open_Sans/static/OpenSans/OpenSans-Regular.ttf) format('truetype');
+  src: local('Open Sans'), url(/fonts/1_400_normal.woff2) format('woff2');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  font-stretch: 100%;
-  src: url(/Open_Sans/static/OpenSans/OpenSans-Bold.ttf) format('truetype');
+  src: local('Open Sans'), url(/fonts/1_700_normal.woff2) format('woff2');
+  font-display: swap;
 }
 
 * {
