@@ -1,7 +1,7 @@
 ---
 title: "このサイトについて"
 date: 2022-09-15T00:00:00+09:00
-lastmod: 2022-10-14T00:00:00+09:00
+lastmod: 2022-10-15T00:00:00+09:00
 ---
 
 ## 免責事項
@@ -25,5 +25,5 @@ lastmod: 2022-10-14T00:00:00+09:00
 ## ライセンス表示
 Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).  
 本サイトは、[particles.js](https://vincentgarreau.com/particles.js/)を利用しており、設定は[HUGO THEME AIR](https://syui.cf/hugo-theme-air/)をベースにしています。  
-本サイトは、[Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans) (SIL Open Font License, Version 1.1)を改変したフォントを利用しています。  
+本サイトは、[Open Sans](https://fonts.google.com/specimen/Open+Sans) (SIL Open Font License, Version 1.1)を改変したフォントを利用しています。  
 Copyright © 2022 Jun's GamingBlog All Rights Reserved.

@@ -1,5 +1,6 @@
 function start_particles() {
-    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    // particles.json is preloaded.
+    // particlesJS.load(@dom-id, @path-json, @callback (optional));
     particlesJS.load('particles-js', '/particles.json');
 }
 

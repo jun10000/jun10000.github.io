@@ -14,6 +14,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   {{ partial "katex.html" . }}
   <title>{{ .Title }} | {{ $.Site.Title }}</title>
+  <link rel="preload" href="/fonts/1_400_normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/1_700_normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/particles.json" as="fetch" type="application/json" crossorigin>
   <script src="/particles.js/particles.min.js"></script>
   <script src="/startup.js"></script>
   {{ partial "google-analytics-async.html" . }}
