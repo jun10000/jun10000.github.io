@@ -3,7 +3,6 @@ languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 title = "Jun's GamingBlog"
 theme = "cayman-hugo-theme"
-enableRobotsTXT = true
 
 # Syntax highlighting
 pygmentsCodefences = true
