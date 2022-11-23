@@ -3,6 +3,8 @@ languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 title = "Jun's GamingBlog"
 theme = "cayman-hugo-theme"
+hasCJKLanguage = true
+summaryLength = 140
 
 # Syntax highlighting
 pygmentsCodefences = true
