@@ -6,7 +6,7 @@ tags: ["自作キーボード", "fortitude60", "キースイッチ"]
 ---
 ## 前置き
 
-[前回](/lube-keyboard-switch)は、Fortitude60の親指用に使うスイッチ「[Tecsee Gold Metal Switch](https://shop.yushakobo.jp/products/2969)」をルブしました。
+[前回](/lube-keyboard-switch/)は、Fortitude60の親指用に使うスイッチ「[Tecsee Gold Metal Switch](https://shop.yushakobo.jp/products/2969)」をルブしました。
 
 今回はこれらを使って、Fortitude60に付いている親指用スイッチを交換していきたいと思います。
 

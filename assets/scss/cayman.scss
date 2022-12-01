@@ -441,6 +441,31 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+
+  .embed-youtube-16-9 {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1em;
+    padding-bottom: 56.25%;
+  }
+
+  .embed-youtube-4-3 {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1em;
+    padding-bottom: 75%;
+  }
+
+  .embed-youtube-16-9 iframe,
+  .embed-youtube-4-3 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .site-footer {

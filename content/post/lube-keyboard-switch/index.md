@@ -6,7 +6,7 @@ tags: ["自作キーボード", "ルブ", "キースイッチ", "Tecsee"]
 ---
 ## 前置き
 
-[前回](/build-log-fortitude60)のFortitude60を組み上げてしばらく経ちました。
+[前回](/build-log-fortitude60/)のFortitude60を組み上げてしばらく経ちました。
 
 スイッチは軽快で、自然な姿勢でタイピングできるようになっています。  
 キースイッチは、親指用に「[Tecsee Gold Metalスイッチ](https://shop.yushakobo.jp/products/2969)」、その他用に「[Gateron Pre-lubed 3 Pins Linearスイッチ](https://shop.yushakobo.jp/products/gateron-pre-lubed-3-pins-linear-switches)」を使っています。  
@@ -110,4 +110,4 @@ Tecsee Sapphireスイッチ（上）、Tecsee Gold Metalスイッチ（下）
 リニアスイッチ（Tecsee Gold Metalスイッチ）のルブ効果は大きく、より良い滑り、心地良い打鍵音を奏でてくれるようになりました。  
 対してタクタイルスイッチ（Tecsee Sapphireスイッチ）の方は、ルブすることによってリニアスイッチ寄りに変化しました。  
 個人的には、Gold Metalスイッチはやって良かったと思える半面、Sapphireスイッチは微妙に感じました。  
-[次回](/change-key-switch-fortitude60)は、ルブ済みのGold MetalスイッチをFortitude60に組み込んでいこうと思います。
+[次回](/change-key-switch-fortitude60/)は、ルブ済みのGold MetalスイッチをFortitude60に組み込んでいこうと思います。
