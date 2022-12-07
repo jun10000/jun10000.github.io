@@ -112,7 +112,7 @@ K型（[白光 T18-K](https://www.amazon.co.jp/%E7%99%BD%E5%85%89-HAKKO-T18K-%E3
 
 ![Imgur](https://i.imgur.com/6OBg71zh.jpg)
 
-ユニバーサル基盤上で試しに使ってみた感じだと、[1.5CF型](https://www.amazon.co.jp/gp/product/B004OR9BLO/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)、[1.6D型](https://www.amazon.co.jp/gp/product/B004OR9BV4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)と同じく使いやすかったです。  
+[ユニバーサル基板](https://www.amazon.co.jp/%E3%82%B5%E3%83%B3%E3%83%8F%E3%83%A4%E3%83%88-ICB-97B-%E4%B8%AD%E5%9E%8B%E3%83%A6%E3%83%8B%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB%E5%9F%BA%E6%9D%BF/dp/B011IJSRY2/)上で試しに使ってみた感じだと、[1.5CF型](https://www.amazon.co.jp/gp/product/B004OR9BLO/)、[1.6D型](https://www.amazon.co.jp/gp/product/B004OR9BV4/)と同じく使いやすかったです。  
 特に、連続したNPTHへのはんだ付けがしやすいように感じました。  
 しばらくはこのこて先を使ってみる予定です。
 
@@ -128,11 +128,12 @@ K型（[白光 T18-K](https://www.amazon.co.jp/%E7%99%BD%E5%85%89-HAKKO-T18K-%E3
 
 ## 最後に
 
-最後までお付き合いいただきありがとうございます{{< raw >}}<(_ _)>{{< /raw >}}  
-結局は、モノづくりもソフトウェア開発も楽しんだもの勝ちだと強く思っています。その反面、楽しまなかった場合、面白いものができるはずがないとも考えています。  
-これからの時代を考えると、金稼ぎよりもやりがいの方を求める方が、結果として未来は明るいと思います。  
+最後までお読みいただき、ありがとうございます。  
+モノづくり、ソフトウェアづくりは楽しんでなんぼだと思っています。  
+（逆に、金稼ぎしか考えていない場合、面白いものができるはずがないとも考えています。）  
+では、今年もお疲れさまでした～  
 
-本記事はFortitude60を使って執筆しました。  
+※本記事はFortitude60を使って執筆致しました。  
 
 ## おまけ
 
