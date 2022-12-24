@@ -5,6 +5,7 @@ title = "Jun's GamingBlog"
 theme = "cayman-hugo-theme"
 hasCJKLanguage = true
 summaryLength = 140
+enableGitInfo = true
 
 # Syntax highlighting
 pygmentsCodefences = true
