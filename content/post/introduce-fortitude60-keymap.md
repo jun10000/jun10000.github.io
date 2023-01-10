@@ -7,6 +7,7 @@ tags: ["自作キーボード", "fortitude60", "キーマップ"]
 
 |日付|内容|
 |---|----|
+|2023/1/10|追記2を追加しました|
 |2022/9/17|追記しました|
 |2022/6/8|keymap.cを更新しました|
 
@@ -156,4 +157,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 ## 追記（2022/9/17）
 
-[各種ソースファイルの最新版](https://github.com/jun10000/fortitude60_keymap)を公開しています。
+~~[各種ソースファイルの最新版](https://github.com/jun10000/fortitude60_keymap)を公開しています。~~
+
+## 追記2（2023/1/10）
+
+キーマップファイルの置き場所を変更しました。  
+[defaultキーマップ（VIA非対応版）](https://github.com/jun10000/qmk_firmware/tree/v0.17.9/keyboards/fortitude60/keymaps/default)はObsoleteとし、[viaキーマップ](https://github.com/jun10000/qmk_firmware/tree/v0.17.9/keyboards/fortitude60/keymaps/via)に切り替えています。  
+その他の変更点は、レイヤーインジケーター（レイヤー毎に、対応するLED色に変更する機能）の導入、RGBLEDアニメーション機能の廃止などです。
