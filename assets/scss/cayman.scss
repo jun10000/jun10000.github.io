@@ -216,7 +216,8 @@ a {
   }
 
   @include small {
-    top: 1.4em;
+    //top: 1.4em;
+    top: 3.3em;
   }
 }
 

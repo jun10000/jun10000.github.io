@@ -67,17 +67,9 @@ pygmentsStyle = "pygments"
     url = "https://junsgamingstore.booth.pm/"
     weight = 2
   [[menu.nav]]
-    name = "GitHub"
-    url = "https://github.com/jun10000"
-    weight = 3
-  [[menu.nav]]
-    name = "Twitter"
-    url = "https://twitter.com/Jun12916057"
-    weight = 4
-  [[menu.nav]]
-    name = "このサイトについて"
+    name = "About"
     url = "/about/"
-    weight = 5
+    weight = 3
 
 [markup]
   [markup.tableOfContents]

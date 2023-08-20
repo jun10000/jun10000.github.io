@@ -1,7 +1,11 @@
 ---
-title: "このサイトについて"
+title: "About"
 date: 2022-09-15T00:00:00+09:00
 ---
+## プロフィール
+- [GitHub (jun10000)](https://github.com/jun10000)
+- [Twitter (Jun8000)](https://twitter.com/Jun8000)
+
 ## 免責事項
 当サイトでは正確な情報を提供するよう努めておりますが、当サイトの御利用によって発生した如何なるトラブルや損失・損害等につきましては一切の責任を負いません。  
 当サイトが紹介しているウェブサイトやソフトウェアの合法性、正確性、道徳性、最新性、適切性、著作権の許諾や有無など、その内容については一切の保証を致しかねます。  
@@ -24,4 +28,4 @@ date: 2022-09-15T00:00:00+09:00
 Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).  
 本サイトは、[particles.js](https://vincentgarreau.com/particles.js/)を利用しており、設定は[HUGO THEME AIR](https://syui.cf/hugo-theme-air/)をベースにしています。  
 本サイトは、[Open Sans](https://fonts.google.com/specimen/Open+Sans) (SIL Open Font License, Version 1.1)を改変したフォントを利用しています。  
-Copyright © 2022 Jun's GamingBlog All Rights Reserved.
+Copyright © 2022- Jun's GamingBlog All Rights Reserved.
