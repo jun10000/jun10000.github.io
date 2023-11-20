@@ -33,6 +33,16 @@ pygmentsStyle = "pygments"
   large_breakpoint = "64em"
   medium_breakpoint = "42em"
 
+  # Header Position (top)
+  ## PC 1-line
+  header_position_top_large = "1.9em"
+  ## Tablet 1-line
+  header_position_top_medium = "3.0em"
+  ## Smartphone 1-line
+  # header_position_top_small = "3.3em"
+  ## Smartphone 2-lines
+  header_position_top_small = "1.4em"
+
   # Theme color
   # https://uigradients.com/#Blu
   theme_color = "#00416A"
@@ -67,9 +77,17 @@ pygmentsStyle = "pygments"
     url = "https://junsgamingstore.booth.pm/"
     weight = 2
   [[menu.nav]]
+    name = "コミュニティ"
+    url = "https://discord.gg/t8PGtM4etS"
+    weight = 3
+  [[menu.nav]]
+    name = "寄付"
+    url = "https://ofuse.me/jun0"
+    weight = 4
+  [[menu.nav]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 5
 
 [markup]
   [markup.tableOfContents]
