@@ -5,15 +5,15 @@ date: 2022-09-15T00:00:00+09:00
 ## 各種リンク
 ### SNS
 - [GitHub (jun10000)](https://github.com/jun10000)
-- [Discord (jun100)](https://discord.gg/t8PGtM4etS)
-- [Twitter (Jun8000)](https://twitter.com/Jun8000)
-
-### ショップ
-- [BOOTH (only03192)](https://junsgamingstore.booth.pm/)
+- [Bluesky (jun100)](https://bsky.app/profile/jun100.bsky.social)
+- [Misskey (Jun2)](https://misskey.io/@Jun2)
 
 ### 寄付
 - [OFUSE (jun0)](https://ofuse.me/jun0)
 - [GitHub Sponsors (jun10000)](https://github.com/sponsors/jun10000/)
+
+### ショップ
+- [BOOTH (only03192)](https://junsgamingstore.booth.pm/)
 
 ## プライバシーポリシー
 ### 免責事項
