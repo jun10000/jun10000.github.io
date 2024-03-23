@@ -76,8 +76,7 @@ Poker互換な60%ケースに合わせて設計されており、さらにスイ
 
 ## 付録データ
 
-- [スイッチプレートデータ（汎用）](SwitchPlate.pdf)
-- [スイッチプレートデータ（遊舎工房のレーザー加工サービス専用、サイズ：A4）](SwitchPlate_Yushakobo_Laser_A4_template_inkscape.svg)
+[こちら](https://github.com/jun10000/OM60/tree/main/rev1/other)でデータを公開しています。
 
 ## 組み立て
 
