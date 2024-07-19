@@ -39,9 +39,9 @@ pygmentsStyle = "pygments"
   ## Tablet 1-line
   header_position_top_medium = "3.0em"
   ## Smartphone 1-line
-  # header_position_top_small = "3.3em"
+  header_position_top_small = "3.3em"
   ## Smartphone 2-lines
-  header_position_top_small = "1.4em"
+  # header_position_top_small = "1.4em"
 
   # Theme color
   # https://uigradients.com/#Blu
@@ -73,8 +73,8 @@ pygmentsStyle = "pygments"
     url = "/"
     weight = 1
   [[menu.nav]]
-    name = "寄付"
-    url = "https://ofuse.me/jun0"
+    name = "GitHub"
+    url = "https://github.com/jun10000"
     weight = 2
   [[menu.nav]]
     name = "ショップ"

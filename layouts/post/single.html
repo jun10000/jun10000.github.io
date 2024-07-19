@@ -18,11 +18,12 @@
   {{ .Content }}
   {{ partial "disqus.html" . }}
 
-  <!-- Tags -->
+  <!-- ofuse, Tags -->
   {{ $tags := slice }}
   {{ with .Params.tags }}
     <hr>
     <div>
+      記事が参考になりましたら、<a href="https://ofuse.me/jun0" target="_blank" rel="noopener">こちら</a>からメッセージを送れます。<br><br>
       <strong>タグ：</strong>
       {{ range . }}
         {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}

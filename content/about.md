@@ -2,18 +2,9 @@
 title: "About"
 date: 2022-09-15T00:00:00+09:00
 ---
-## 各種リンク
-### SNS
-- [GitHub (jun10000)](https://github.com/jun10000)
+## SNS
 - [Bluesky (jun100)](https://bsky.app/profile/jun100.bsky.social)
 - [Misskey (Jun2)](https://misskey.io/@Jun2)
-
-### 寄付
-- [OFUSE (jun0)](https://ofuse.me/jun0)
-- [GitHub Sponsors (jun10000)](https://github.com/sponsors/jun10000/)
-
-### ショップ
-- [BOOTH (only03192)](https://junsgamingstore.booth.pm/)
 
 ## プライバシーポリシー
 ### 免責事項
