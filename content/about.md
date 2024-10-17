@@ -2,10 +2,6 @@
 title: "About"
 date: 2022-09-15T00:00:00+09:00
 ---
-## SNS
-- [Bluesky (jun100)](https://bsky.app/profile/jun100.bsky.social)
-- [Misskey (Jun2)](https://misskey.io/@Jun2)
-
 ## プライバシーポリシー
 ### 免責事項
 当サイトでは正確な情報を提供するよう努めておりますが、当サイトの御利用によって発生した如何なるトラブルや損失・損害等につきましては一切の責任を負いません。  

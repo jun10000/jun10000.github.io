@@ -22,8 +22,8 @@
   {{ $tags := slice }}
   {{ with .Params.tags }}
     <hr>
-    <div>
-      記事が参考になりましたら、<a href="https://ofuse.me/jun0" target="_blank" rel="noopener">こちら</a>からメッセージを送れます。<br><br>
+    コメントは<a href="https://ofuse.me/jun0" target="_blank" rel="noopener">こちら</a>にどうぞ！<br>
+    <div style="margin-top: 1em;">
       <strong>タグ：</strong>
       {{ range . }}
         {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
