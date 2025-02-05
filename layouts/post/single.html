@@ -24,13 +24,7 @@
     <hr>
     コメントは<a href="https://ofuse.me/jun0" target="_blank" rel="noopener">こちら</a>にどうぞ！<br>
     <div style="margin-top: 1em;">
-      <strong>タグ：</strong>
-      {{ range . }}
-        {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
-        {{ $element := printf "<a href=\"%s\" class='btn-taglist'>%s</a>" $href . }}
-        {{ $tags = $tags | append $element }}
-      {{ end }}
-      {{ delimit $tags "" }}
+      <strong>タグ：</strong>{{ range . }}{{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}<a href="{{ $href }}" class="btn-taglist">{{.}}</a>{{ end }}
     </div>
   {{ end }}
 
