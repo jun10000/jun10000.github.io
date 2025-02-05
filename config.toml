@@ -33,24 +33,8 @@ pygmentsStyle = "pygments"
   large_breakpoint = "64em"
   medium_breakpoint = "42em"
 
-  # Header Position (top)
-  ## PC 1-line
-  header_position_top_large = "1.9em"
-  ## Tablet 1-line
-  header_position_top_medium = "3.0em"
-  ## Smartphone 1-line
-  header_position_top_small = "3.3em"
-  ## Smartphone 2-lines
-  # header_position_top_small = "1.4em"
-
   # Theme color
-  # https://uigradients.com/#Blu
-  theme_color = "#00416A"
-
-  # Header colors
-  header_heading_color = "#fff"
-  header_background_color_secondary = "#00416A"
-  header_background_color = "#E4E5E6"
+  theme_color = "#2DA7B4"
 
   # Text colors
   section_headings_color = "#159957"
