@@ -159,7 +159,7 @@ $(document).ready(function () {
     case 0:
         start_particles();
         break;
-    case 1:
+    default:
         start_ripples();
         break;
     }
