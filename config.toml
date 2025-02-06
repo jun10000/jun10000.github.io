@@ -33,8 +33,16 @@ pygmentsStyle = "pygments"
   large_breakpoint = "64em"
   medium_breakpoint = "42em"
 
-  # Theme color
-  theme_color = "#2DA7B4"
+  # Theme colors
+  # particles color use uiGradients (https://uigradients.com/#Blu)
+  theme_color_init = "#808080"
+  theme_color_init_rgb = "128,128,128"
+  theme_color_particles = "#00416A"
+  theme_color_particles_rgb = "0,65,106"
+  theme_color_ripples = "#2DA7B4"
+  theme_color_ripples_rgb = "45,167,180"
+  particles_background_color1 = "#00416A"
+  particles_background_color2 = "#E4E5E6"
 
   # Text colors
   section_headings_color = "#159957"

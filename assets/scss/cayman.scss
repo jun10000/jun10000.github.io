@@ -3,7 +3,14 @@ $large-breakpoint: {{ $.Site.Params.large_breakpoint | default "64em" }} !defaul
 $medium-breakpoint: {{ $.Site.Params.medium_breakpoint | default "42em" }} !default;
 
 // Theme color
-$theme-color: {{ $.Site.Params.theme_color | default "#155799" }} !default;
+$theme-color-init: {{ $.Site.Params.theme_color_init | default "#2DA7B4" }} !default;
+$theme-color-init-rgb: {{ $.Site.Params.theme_color_init_rgb | default "45,167,180" }} !default;
+$theme-color-particles: {{ $.Site.Params.theme_color_particles | default "#7293A8" }} !default;
+$theme-color-particles-rgb: {{ $.Site.Params.theme_color_particles_rgb | default "114,147,168" }} !default;
+$theme-color-ripples: {{ $.Site.Params.theme_color_ripples | default "#2DA7B4" }} !default;
+$theme-color-ripples-rgb: {{ $.Site.Params.theme_color_ripples_rgb | default "45,167,180" }} !default;
+$particles-bg-color1: {{ $.Site.Params.particles_background_color1 | default "#00416A" }} !default;
+$particles-bg-color2: {{ $.Site.Params.particles_background_color2 | default "#E4E5E6" }} !default;
 
 // Text
 $section-headings-color: {{ $.Site.Params.section_headings_color | default "#159957" }} !default;
@@ -63,6 +70,12 @@ $hr-border-color: {{ $.Site.Params.hr_border_color | default "#eff0f1" }} !defau
   font-display: swap;
 }
 
+:root {
+  --theme-color: #{$theme-color-init-rgb};
+  --theme-color-particles: #{$theme-color-particles-rgb};
+  --theme-color-ripples: #{$theme-color-ripples-rgb};
+}
+
 * {
   box-sizing: border-box;
 }
@@ -78,8 +91,8 @@ body {
 
 a {
   color: $body-link-color;
-  background-color: rgba($theme-color, 0);
-  border-color: rgba($theme-color, 0);
+  background-color: rgba(var(--theme-color), 0);
+  border-color: rgba(var(--theme-color), 0);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
@@ -87,8 +100,8 @@ a {
   text-decoration: none;
 
   &:hover {
-    background-color: rgba($theme-color, 0.1);
-    border-color: rgba($theme-color, 0.1);
+    background-color: rgba(var(--theme-color), 0.1);
+    border-color: rgba(var(--theme-color), 0.1);
   }
 }
 
@@ -128,8 +141,8 @@ a {
 .btn-articlelist {
   display: block;
   color: rgba(black, 1.0);
-  background-color: rgba($theme-color, 0.1);
-  border-color: rgba($theme-color, 0.3);
+  background-color: rgba(var(--theme-color), 0.1);
+  border-color: rgba(var(--theme-color), 0.3);
   margin-bottom: 1rem;
 
   @include large {
@@ -148,16 +161,16 @@ a {
   }
 
   &:hover {
-    background-color: rgba($theme-color, 0.2);
-    border-color: rgba($theme-color, 0.3);
+    background-color: rgba(var(--theme-color), 0.2);
+    border-color: rgba(var(--theme-color), 0.3);
   }
 }
 
 .btn-taglist {
   display: inline-block;
   color: rgba(black, 1.0);
-  background-color: rgba($theme-color, 0.1);
-  border-color: rgba($theme-color, 0.3);
+  background-color: rgba(var(--theme-color), 0.1);
+  border-color: rgba(var(--theme-color), 0.3);
   margin-bottom: 0.4rem;
 
   + .btn-taglist {
@@ -177,17 +190,17 @@ a {
   }
 
   &:hover {
-    background-color: rgba($theme-color, 0.2);
-    border-color: rgba($theme-color, 0.3);
+    background-color: rgba(var(--theme-color), 0.2);
+    border-color: rgba(var(--theme-color), 0.3);
   }
 }
 
 .page-header {
   color: white;
   text-shadow: 0 0 20px rgba(black, 0.6);
-  background: url("/header.jpg") center center / cover no-repeat $theme-color;
   text-align: center;
   width: 100%;
+  position: relative;
 
   @include large {
     padding: 1.5rem 0;
@@ -200,6 +213,17 @@ a {
   @include small {
     padding: 1.0rem 0;
   }
+}
+
+.particles-js-canvas-el {
+  background: linear-gradient(120deg, $particles-bg-color1, $particles-bg-color2) $theme-color-particles;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.jquery-ripples {
+  background: url("/header.jpg") center center / cover no-repeat $theme-color-ripples;
 }
 
 .project-name {
