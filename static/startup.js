@@ -93,11 +93,11 @@ function start_particles() {
             }
         },
         "interactivity": {
-            "detect_on": "canvas",
+            "detect_on": "window",
             "events": {
                 "onhover": {
-                "enable": true,
-                "mode": "grab"
+                    "enable": true,
+                    "mode": "grab"
                 },
                 "onclick": {
                     "enable": true,
@@ -107,10 +107,10 @@ function start_particles() {
             },
             "modes": {
                 "grab": {
-                "distance": 400,
-                "line_linked": {
-                    "opacity": 1
-                }
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 0.3  // 1
+                    }
                 },
                 "bubble": {
                     "distance": 400,

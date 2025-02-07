@@ -26,11 +26,11 @@ Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbe
 
 本サイトは、以下の素材を利用しています。
 - [particles.js](https://vincentgarreau.com/particles.js/)
-- [HUGO THEME AIR](https://github.com/syui/hugo-theme-air)のparticles.js設定
+- [HUGO THEME AIR](https://github.com/syui/hugo-theme-air)のparticles.js設定（一部改変）
 - [uiGradients](https://uigradients.com/)のBluプリセット
 - [jQuery](https://jquery.com/)
 - [jQuery Ripples](http://sirxemic.github.io/jquery.ripples/)
 - [Sea, Nature, Crete image](https://pixabay.com/photos/sea-crete-blue-2009160/) by [claudiettaciucci](https://pixabay.com/users/claudiettaciucci-2795389/)
-- [Open Sans](https://fonts.google.com/specimen/Open+Sans) (SIL Open Font License, Version 1.1)を改変したフォント
+- [Open Sans](https://fonts.google.com/specimen/Open+Sans) (SIL Open Font License, Version 1.1)（改変）
 
 Copyright © 2022- Jun's GamingBlog All Rights Reserved.
