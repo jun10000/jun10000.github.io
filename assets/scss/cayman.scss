@@ -3,8 +3,6 @@ $large-breakpoint: {{ $.Site.Params.large_breakpoint | default "64em" }} !defaul
 $medium-breakpoint: {{ $.Site.Params.medium_breakpoint | default "42em" }} !default;
 
 // Theme color
-$theme-color-init: {{ $.Site.Params.theme_color_init | default "#2DA7B4" }} !default;
-$theme-color-init-rgb: {{ $.Site.Params.theme_color_init_rgb | default "45,167,180" }} !default;
 $theme-color-particles: {{ $.Site.Params.theme_color_particles | default "#7293A8" }} !default;
 $theme-color-particles-rgb: {{ $.Site.Params.theme_color_particles_rgb | default "114,147,168" }} !default;
 $theme-color-ripples: {{ $.Site.Params.theme_color_ripples | default "#2DA7B4" }} !default;
@@ -71,7 +69,7 @@ $hr-border-color: {{ $.Site.Params.hr_border_color | default "#eff0f1" }} !defau
 }
 
 :root {
-  --theme-color: #{$theme-color-init-rgb};
+  --theme-color: 255,255,255;
   --theme-color-particles: #{$theme-color-particles-rgb};
   --theme-color-ripples: #{$theme-color-ripples-rgb};
 }
@@ -110,11 +108,20 @@ a {
   color: rgba(white, 1);
   background-color: rgba(black, 0.3);
   border-color: rgba(white, 0.6);
-  box-shadow: 0 0 20px rgba(white, 1);
   margin-bottom: 1rem;
 
   + .btn-nav {
-    margin-left: 1rem;
+    @include large {
+      margin-left: 1rem;
+    }
+  
+    @include medium {
+      margin-left: 0.9rem;
+    }
+  
+    @include small {
+      margin-left: 0.9rem;
+    }
   }
 
   @include large {
@@ -128,7 +135,7 @@ a {
   }
 
   @include small {
-    padding: 0.75rem;
+    padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
 
@@ -156,7 +163,7 @@ a {
   }
 
   @include small {
-    padding: 0.75rem;
+    padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
 
@@ -178,15 +185,15 @@ a {
   }
 
   @include large {
-    padding: 0 0.5rem;
+    padding: 0 0.7rem;
   }
 
   @include medium {
-    padding: 0 0.5rem;
+    padding: 0.1rem 0.7rem;
   }
 
   @include small {
-    padding: 0 0.3rem;
+    padding: 0.1rem 0.7rem;
   }
 
   &:hover {
@@ -203,19 +210,19 @@ a {
   position: relative;
 
   @include large {
-    padding: 1.5rem 0;
+    padding: 1.5rem;
   }
 
   @include medium {
-    padding: 1.0rem 0;
+    padding: 1rem;
   }
 
   @include small {
-    padding: 1.0rem 0;
+    padding: 1rem;
   }
 }
 
-.particles-js-canvas-el {
+.particles-js > canvas {
   background: linear-gradient(120deg, $particles-bg-color1, $particles-bg-color2) $theme-color-particles;
   position: absolute;
   inset: 0;
@@ -224,6 +231,10 @@ a {
 
 .jquery-ripples {
   background: url("/header.jpg") center center / cover no-repeat $theme-color-ripples;
+}
+
+.jquery-ripples .btn-nav {
+    box-shadow: 0 0 20px rgba(white, 0.8);
 }
 
 .project-name {

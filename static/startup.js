@@ -21,7 +21,10 @@ function set_theme_color(property_name) {
 // start_particles starts particles.js (https://vincentgarreau.com/particles.js/)
 function start_particles() {
     set_theme_color("--theme-color-particles");
-    particlesJS("page-header", {
+
+    var elementID = "page-header";
+    document.getElementById(elementID).classList.add("particles-js");
+    particlesJS(elementID, {
         "particles": {
             "number": {
                 "value": 80,
@@ -135,7 +138,9 @@ function start_particles() {
 // start_ripples starts jQuery Ripples (https://github.com/sirxemic/jquery.ripples/)
 function start_ripples() {
     set_theme_color("--theme-color-ripples");
-    $('#page-header').ripples({
+
+    var elementName = "#page-header";
+    $(elementName).ripples({
         // imageUrl: null,
         // dropRadius: 20,
         // perturbance: 0.03,
@@ -144,7 +149,7 @@ function start_ripples() {
         // crossOrigin: "",
     });
 	setInterval(function() {
-		var $elememt = $('.page-header');
+		var $elememt = $(elementName);
 		var x = Math.random() * $elememt.outerWidth();
 		var y = Math.random() * $elememt.outerHeight();
 		var radius = 20;
@@ -154,7 +159,8 @@ function start_ripples() {
 }
 
 $(document).ready(function () {
-    var index = Math.trunc(Math.random() * 2);
+    const now = new Date();
+    var index = now.getMinutes() % 2;
     switch (index) {
     case 0:
         start_particles();

@@ -35,8 +35,6 @@ pygmentsStyle = "pygments"
 
   # Theme colors
   # particles color use uiGradients (https://uigradients.com/#Blu)
-  theme_color_init = "#808080"
-  theme_color_init_rgb = "128,128,128"
   theme_color_particles = "#00416A"
   theme_color_particles_rgb = "0,65,106"
   theme_color_ripples = "#2DA7B4"
