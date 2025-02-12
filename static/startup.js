@@ -160,7 +160,7 @@ function start_ripples() {
 
 $(document).ready(function () {
     const now = new Date();
-    var index = now.getMinutes() % 2;
+    var index = now.getHours() % 2;
     switch (index) {
     case 0:
         start_particles();
