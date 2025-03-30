@@ -460,7 +460,7 @@ a {
     border: 0;
   }
 
-  .embed-youtube-16-9 {
+  .embed-iframe-16-9 {
     position: relative;
     height: 0;
     overflow: hidden;
@@ -468,7 +468,7 @@ a {
     padding-bottom: 56.25%;
   }
 
-  .embed-youtube-4-3 {
+  .embed-iframe-4-3 {
     position: relative;
     height: 0;
     overflow: hidden;
@@ -476,8 +476,8 @@ a {
     padding-bottom: 75%;
   }
 
-  .embed-youtube-16-9 iframe,
-  .embed-youtube-4-3 iframe {
+  .embed-iframe-16-9 iframe,
+  .embed-iframe-4-3 iframe {
     position: absolute;
     top: 0;
     left: 0;

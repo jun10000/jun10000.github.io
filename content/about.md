@@ -30,7 +30,9 @@ Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbe
 - [uiGradients](https://uigradients.com/)のBluプリセット
 - [jQuery](https://jquery.com/)
 - [jQuery Ripples](http://sirxemic.github.io/jquery.ripples/)
+- [Go](https://github.com/golang/go) (BSD-3-Clause license)
 - [Sea, Nature, Crete image](https://pixabay.com/photos/sea-crete-blue-2009160/) by [claudiettaciucci](https://pixabay.com/users/claudiettaciucci-2795389/)
+- [Play Icon](https://icon-icons.com/icon/play/12134) by [DryIcons](https://icon-icons.com/users/N4TUgbnAA1CKz1ulZ4sVS/icon-sets/)
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans) (SIL Open Font License, Version 1.1)（改変）
 
 Copyright © 2022- Jun's GamingBlog All Rights Reserved.
