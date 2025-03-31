@@ -7,12 +7,21 @@
             <title>go-wasm player</title>
             <script src='/gowasm.js'></script>
             <script>
+                function FocusWasm() {
+                    let eCanvases = document.body.getElementsByTagName('canvas');
+                    if (eCanvases.length > 0) {
+                        eCanvases[0].focus();
+                    }
+                }
+
                 function ToggleFullscreen() {
                     if (!document.fullscreenElement) {
                         document.documentElement.requestFullscreen();
                     } else {
                         document.exitFullscreen();
                     }
+
+                    FocusWasm();
                 }
 
                 async function RunGoWasm() {
@@ -74,9 +83,10 @@
         
                     // Change view
                     eStarter.remove();
-        
+
                     // Start wasm instance
                     go.run(wasmInstance.instance);
+                    FocusWasm();
                 }
             </script>
         </head>
