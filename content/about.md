@@ -22,8 +22,6 @@ date: 2022-09-15T00:00:00+09:00
 管理人からリンク削除の申し入れを行なった場合は、速やかに従ってください。
 
 ## ライセンス表示
-Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).  
-
 本サイトは、以下の素材を利用しています。
 - [particles.js](https://vincentgarreau.com/particles.js/)
 - [HUGO THEME AIR](https://github.com/syui/hugo-theme-air)のparticles.js設定（一部改変）
@@ -31,9 +29,15 @@ Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbe
 - [jQuery](https://jquery.com/)
 - [jQuery Ripples](http://sirxemic.github.io/jquery.ripples/)
 - [Go](https://github.com/golang/go) (BSD-3-Clause license)
-- [Sea, Nature, Crete image](https://pixabay.com/photos/sea-crete-blue-2009160/) by [claudiettaciucci](https://pixabay.com/users/claudiettaciucci-2795389/)
-- [Play Icon](https://icon-icons.com/icon/play/12134) by [DryIcons](https://icon-icons.com/users/N4TUgbnAA1CKz1ulZ4sVS/icon-sets/)
-- [Full full screen layout Icon](https://icon-icons.com/icon/Full-full-screen-layout-orientation-expand-screen/81433) by [DinosoftLabs](https://icon-icons.com/users/WOy9WPlx0QfY0qGdIjvwQ/icon-sets/)
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans) (SIL Open Font License, Version 1.1)（改変）
+- [Sea, Nature, Crete image](https://pixabay.com/photos/sea-crete-blue-2009160/)
+  by [claudiettaciucci](https://pixabay.com/users/claudiettaciucci-2795389/)
+- [Play Icon](https://icon-icons.com/icon/play/12134)
+  by [DryIcons](https://icon-icons.com/users/N4TUgbnAA1CKz1ulZ4sVS/icon-sets/)
+- [Full full screen layout Icon](https://icon-icons.com/icon/Full-full-screen-layout-orientation-expand-screen/81433)
+  by [DinosoftLabs](https://icon-icons.com/users/WOy9WPlx0QfY0qGdIjvwQ/icon-sets/)
+- [Abstract, Waves, Background](https://pixabay.com/illustrations/abstract-waves-background-wallpaper-5719527/)
+  by [tommyvideo](https://pixabay.com/users/tommyvideo-3092371/)
 
+Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).  
 Copyright © 2022- Jun's GamingBlog All Rights Reserved.
