@@ -140,8 +140,9 @@ a {
   }
 
   &:hover {
-    background-color: rgba(black, 0.6);
-    border-color: rgba(white, 1);
+    color: rgba(black, 1);
+    background-color: rgba(white, 0.6);
+    border-color: rgba(white, 0.9);
   }
 }
 
@@ -235,6 +236,10 @@ a {
 
 .jquery-ripples .btn-nav {
     box-shadow: 0 0 20px rgba(white, 0.8);
+}
+
+.jquery-ripples .btn-nav:hover {
+    box-shadow: 0 0 20px rgba(white, 1);
 }
 
 .project-name {
