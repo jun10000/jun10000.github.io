@@ -1,44 +1,119 @@
-// Breakpoints
-$large-breakpoint: {{ $.Site.Params.large_breakpoint | default "64em" }} !default;
-$medium-breakpoint: {{ $.Site.Params.medium_breakpoint | default "42em" }} !default;
+@property --theme-color {
+  syntax: "<number>+";
+  inherits: true;
+  initial-value: 255 255 255;
+}
 
-// Theme color
-$theme-color-particles: {{ $.Site.Params.theme_color_particles | default "#7293A8" }} !default;
-$theme-color-particles-rgb: {{ $.Site.Params.theme_color_particles_rgb | default "114,147,168" }} !default;
-$theme-color-ripples: {{ $.Site.Params.theme_color_ripples | default "#2DA7B4" }} !default;
-$theme-color-ripples-rgb: {{ $.Site.Params.theme_color_ripples_rgb | default "45,167,180" }} !default;
-$particles-bg-color1: {{ $.Site.Params.particles_background_color1 | default "#00416A" }} !default;
-$particles-bg-color2: {{ $.Site.Params.particles_background_color2 | default "#E4E5E6" }} !default;
+@property --theme-color-particles {
+  syntax: "<number>+";
+  inherits: false;
+  initial-value: 0 65 106;
+}
 
-// Text
-$section-headings-color: {{ $.Site.Params.section_headings_color | default "#159957" }} !default;
-$body-text-color: {{ $.Site.Params.body_text_color | default "#606c71" }} !default;
-$body-link-color: {{ $.Site.Params.body_link_color | default "#1e6bb8" }} !default;
-$blockquote-text-color: {{ $.Site.Params.blockquote_text_color | default "#819198" }} !default;
+@property --theme-color-particles-hex {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #00416A;
+}
 
-// Code
-$code-bg-color: {{ $.Site.Params.code_background_color | default "#f3f6fa" }} !default;
-$code-text-color: {{ $.Site.Params.code_text_color | default "#567482" }} !default;
+@property --theme-color-particles-header1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #00416A;
+}
 
-// Borders
-$border-color: {{ $.Site.Params.border_color | default "#dce6f0" }} !default;
-$table-border-color: {{ $.Site.Params.table_border_color | default "#e9ebec" }} !default;
-$hr-border-color: {{ $.Site.Params.hr_border_color | default "#eff0f1" }} !default;
+@property --theme-color-particles-header2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #E4E6E6;
+}
+
+@property --theme-color-ripples {
+  syntax: "<number>+";
+  inherits: false;
+  initial-value: 45 167 180;
+}
+
+@property --theme-color-ripples-hex {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #2DA7B4;
+}
+
+@property --headings-text-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #159957;
+}
+
+@property --body-text-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #606c71;
+}
+
+@property --body-link-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #1e6bb8;
+}
+
+@property --blockquote-text-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #819198;
+}
+
+@property --blockquote-border-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #dce6f0;
+}
+
+@property --code-text-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #567482;
+}
+
+@property --code-bg-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #f3f6fa;
+}
+
+@property --pre-border-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #dce6f0;
+}
+
+@property --table-border-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #e9ebec;
+}
+
+@property --hr-border-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #eff0f1;
+}
 
 @mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
+  @media screen and (min-width: 64em) {
     @content;
   }
 }
 
 @mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+  @media screen and (min-width: 42em) and (max-width: 64em) {
     @content;
   }
 }
 
 @mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
+  @media screen and (max-width: 42em) {
     @content;
   }
 }
@@ -68,12 +143,6 @@ $hr-border-color: {{ $.Site.Params.hr_border_color | default "#eff0f1" }} !defau
   font-display: swap;
 }
 
-:root {
-  --theme-color: 255,255,255;
-  --theme-color-particles: #{$theme-color-particles-rgb};
-  --theme-color-ripples: #{$theme-color-ripples-rgb};
-}
-
 * {
   box-sizing: border-box;
 }
@@ -84,13 +153,13 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: $body-text-color;
+  color: var(--body-text-color);
 }
 
 a {
-  color: $body-link-color;
-  background-color: rgba(var(--theme-color), 0);
-  border-color: rgba(var(--theme-color), 0);
+  color: var(--body-link-color);
+  background-color: unquote("rgb(var(--theme-color) / 0%)");
+  border-color: unquote("rgb(var(--theme-color) / 0%)");
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
@@ -98,8 +167,8 @@ a {
   text-decoration: none;
 
   &:hover {
-    background-color: rgba(var(--theme-color), 0.1);
-    border-color: rgba(var(--theme-color), 0.1);
+    background-color: unquote("rgb(var(--theme-color) / 10%)");
+    border-color: unquote("rgb(var(--theme-color) / 10%)");
   }
 }
 
@@ -149,8 +218,8 @@ a {
 .btn-articlelist {
   display: block;
   color: rgba(black, 1.0);
-  background: linear-gradient(0deg, rgba(var(--theme-color), 0.25), rgba(var(--theme-color), 0.05)) white;
-  border-color: rgba(var(--theme-color), 0.25);
+  background: linear-gradient(0deg, unquote("rgb(var(--theme-color) / 25%)"), unquote("rgb(var(--theme-color) / 5%)")) white;
+  border-color: unquote("rgb(var(--theme-color) / 25%)");
   margin-bottom: 1rem;
 
   @include large {
@@ -169,16 +238,16 @@ a {
   }
 
   &:hover {
-    background: linear-gradient(0deg, rgba(var(--theme-color), 0.4), rgba(var(--theme-color), 0.07)) white;
-    border-color: rgba(var(--theme-color), 0.4);
+    background: linear-gradient(0deg, unquote("rgb(var(--theme-color) / 40%)"), unquote("rgb(var(--theme-color) / 7%)")) white;
+    border-color: unquote("rgb(var(--theme-color) / 40%)");
   }
 }
 
 .btn-taglist {
   display: inline-block;
   color: rgba(black, 1.0);
-  background: linear-gradient(0deg, rgba(var(--theme-color), 0.25), rgba(var(--theme-color), 0.05)) white;
-  border-color: rgba(var(--theme-color), 0.25);
+  background: linear-gradient(0deg, unquote("rgb(var(--theme-color) / 25%)"), unquote("rgb(var(--theme-color) / 5%)")) white;
+  border-color: unquote("rgb(var(--theme-color) / 25%)");
   margin-bottom: 0.4rem;
 
   + .btn-taglist {
@@ -198,8 +267,8 @@ a {
   }
 
   &:hover {
-    background: linear-gradient(0deg, rgba(var(--theme-color), 0.4), rgba(var(--theme-color), 0.07)) white;
-    border-color: rgba(var(--theme-color), 0.4);
+    background: linear-gradient(0deg, unquote("rgb(var(--theme-color) / 40%)"), unquote("rgb(var(--theme-color) / 7%)")) white;
+    border-color: unquote("rgb(var(--theme-color) / 40%)");
   }
 }
 
@@ -224,14 +293,14 @@ a {
 }
 
 .particles-js > canvas {
-  background: linear-gradient(120deg, $particles-bg-color1, $particles-bg-color2) $theme-color-particles;
+  background: linear-gradient(120deg, var(--theme-color-particles-header1), var(--theme-color-particles-header2)) var(--theme-color-particles-hex);
   position: absolute;
   inset: 0;
   z-index: -1;
 }
 
 .jquery-ripples {
-  background: url("/header-ripples.jpg") center center / cover no-repeat $theme-color-ripples;
+  background: url("/header-ripples.jpg") center center / cover no-repeat var(--theme-color-ripples-hex);
 }
 
 .jquery-ripples .btn-nav {
@@ -309,7 +378,7 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $section-headings-color;
+    color: var(--headings-text-color);
   }
 
   h2,
@@ -320,7 +389,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $section-headings-color;
+    color: var(--headings-text-color);
   }
 
   p {
@@ -331,8 +400,8 @@ a {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 0.9em;
-    color: $code-text-color;
-    background-color: $code-bg-color;
+    color: var(--code-text-color);
+    background-color: var(--code-bg-color);
     border-radius: 0.3rem;
   }
 
@@ -341,17 +410,17 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: $code-text-color;
+    color: var(--code-text-color);
     word-wrap: normal;
-    background-color: $code-bg-color;
-    border: solid 1px $border-color;
+    background-color: var(--code-bg-color);
+    border: solid 1px var(--pre-border-color);
     border-radius: 0.3rem;
 
     > code {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: $code-text-color;
+      color: var(--code-text-color);
       word-break: normal;
       white-space: pre;
       background: transparent;
@@ -410,8 +479,8 @@ a {
   blockquote {
     padding: 0 1rem;
     margin-left: 0;
-    color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+    color: var(--blockquote-text-color);
+    border-left: 0.3rem solid var(--blockquote-border-color);
 
     > :first-child {
       margin-top: 0;
@@ -437,7 +506,7 @@ a {
     th,
     td {
       padding: 0.5rem 1rem;
-      border: 1px solid $table-border-color;
+      border: 1px solid var(--table-border-color);
     }
   }
 
@@ -461,7 +530,7 @@ a {
     height: 2px;
     padding: 0;
     margin: 1rem 0;
-    background-color: $hr-border-color;
+    background-color: var(--hr-border-color);
     border: 0;
   }
 
@@ -494,7 +563,7 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+  border-top: solid 1px var(--hr-border-color);
 
   @include large {
     font-size: 1rem;
@@ -515,7 +584,7 @@ a {
 }
 
 .site-footer-credits {
-  color: $blockquote-text-color;
+  color: var(--blockquote-text-color);
 }
 
 .autowrap {
