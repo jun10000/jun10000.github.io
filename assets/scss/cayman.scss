@@ -1,3 +1,15 @@
+@property --current-gradient-color1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: white;
+}
+
+@property --current-gradient-color2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: white;
+}
+
 @property --theme-color {
   syntax: "<number>+";
   inherits: true;
@@ -157,18 +169,20 @@ body {
 }
 
 a {
+  --current-gradient-color1: rgb(var(--theme-color) / 0%);
+  --current-gradient-color2: rgb(var(--theme-color) / 0%);
   color: var(--body-link-color);
-  background-color: unquote("rgb(var(--theme-color) / 0%)");
-  border-color: unquote("rgb(var(--theme-color) / 0%)");
+  background: linear-gradient(135deg, var(--current-gradient-color1), var(--current-gradient-color2)) white;
+  border-color: var(--current-gradient-color1);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
-  transition: color 0.1s, background-color 0.1s, border-color 0.1s;
+  transition: color 0.1s, background-color 0.1s, border-color 0.1s, --current-gradient-color1 0.1s, --current-gradient-color2 0.1s;
   text-decoration: none;
 
   &:hover {
-    background-color: unquote("rgb(var(--theme-color) / 10%)");
-    border-color: unquote("rgb(var(--theme-color) / 10%)");
+    --current-gradient-color1: rgb(var(--theme-color) / 7%);
+    --current-gradient-color2: rgb(var(--theme-color) / 17%);
   }
 }
 
@@ -216,10 +230,12 @@ a {
 }
 
 .btn-articlelist {
+  --current-gradient-color1: rgb(var(--theme-color) / 25%);
+  --current-gradient-color2: rgb(var(--theme-color) / 5%);
   display: block;
   color: rgba(black, 1.0);
-  background: linear-gradient(0deg, unquote("rgb(var(--theme-color) / 25%)"), unquote("rgb(var(--theme-color) / 5%)")) white;
-  border-color: unquote("rgb(var(--theme-color) / 25%)");
+  background: linear-gradient(0deg, var(--current-gradient-color1), var(--current-gradient-color2)) white;
+  border-color: var(--current-gradient-color1);
   margin-bottom: 1rem;
 
   @include large {
@@ -238,16 +254,18 @@ a {
   }
 
   &:hover {
-    background: linear-gradient(0deg, unquote("rgb(var(--theme-color) / 40%)"), unquote("rgb(var(--theme-color) / 7%)")) white;
-    border-color: unquote("rgb(var(--theme-color) / 40%)");
+    --current-gradient-color1: rgb(var(--theme-color) / 40%);
+    --current-gradient-color2: rgb(var(--theme-color) / 7%);
   }
 }
 
 .btn-taglist {
+  --current-gradient-color1: rgb(var(--theme-color) / 25%);
+  --current-gradient-color2: rgb(var(--theme-color) / 5%);
   display: inline-block;
   color: rgba(black, 1.0);
-  background: linear-gradient(0deg, unquote("rgb(var(--theme-color) / 25%)"), unquote("rgb(var(--theme-color) / 5%)")) white;
-  border-color: unquote("rgb(var(--theme-color) / 25%)");
+  background: linear-gradient(0deg, var(--current-gradient-color1), var(--current-gradient-color2)) white;
+  border-color: var(--current-gradient-color1);
   margin-bottom: 0.4rem;
 
   + .btn-taglist {
@@ -267,8 +285,8 @@ a {
   }
 
   &:hover {
-    background: linear-gradient(0deg, unquote("rgb(var(--theme-color) / 40%)"), unquote("rgb(var(--theme-color) / 7%)")) white;
-    border-color: unquote("rgb(var(--theme-color) / 40%)");
+    --current-gradient-color1: rgb(var(--theme-color) / 40%);
+    --current-gradient-color2: rgb(var(--theme-color) / 7%);
   }
 }
 
