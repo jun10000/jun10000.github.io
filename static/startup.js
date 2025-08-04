@@ -15,12 +15,12 @@ function open_image_tab(img) {
 function set_theme_color(property_name) {
     const root = document.documentElement;
     var color = getComputedStyle(root).getPropertyValue(property_name);
-    root.style.setProperty("--theme-color", color);
+    root.style.setProperty("--current-theme-rgb", color);
 }
 
 // start_particles starts particles.js (https://vincentgarreau.com/particles.js/)
 function start_particles() {
-    set_theme_color("--theme-color-particles");
+    set_theme_color("--theme-particles-rgb");
 
     var elementID = "page-header";
     document.getElementById(elementID).classList.add("particles-js");
@@ -137,7 +137,7 @@ function start_particles() {
 
 // start_ripples starts jQuery Ripples (https://github.com/sirxemic/jquery.ripples/)
 function start_ripples() {
-    set_theme_color("--theme-color-ripples");
+    set_theme_color("--theme-ripples-rgb");
 
     var elementName = "#page-header";
     $(elementName).ripples({

@@ -1,52 +1,49 @@
 @property --current-gradient-color1 {
   syntax: "<color>";
   inherits: false;
-  initial-value: white;
+  initial-value: gray;
 }
 
 @property --current-gradient-color2 {
   syntax: "<color>";
   inherits: false;
-  initial-value: white;
+  initial-value: gray;
 }
 
-@property --theme-color {
+// Used for startup.js
+@property --current-theme-rgb {
   syntax: "<number>+";
   inherits: true;
   initial-value: 255 255 255;
 }
 
-@property --theme-color-particles {
+// Used for startup.js
+@property --theme-particles-rgb {
   syntax: "<number>+";
   inherits: false;
   initial-value: 0 65 106;
 }
 
-@property --theme-color-particles-hex {
+@property --theme-particles-color {
   syntax: "<color>";
   inherits: false;
   initial-value: #00416A;
 }
 
-@property --theme-color-particles-header1 {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #00416A;
-}
-
-@property --theme-color-particles-header2 {
+@property --theme-particles-color2 {
   syntax: "<color>";
   inherits: false;
   initial-value: #E4E6E6;
 }
 
-@property --theme-color-ripples {
+// Used for startup.js
+@property --theme-ripples-rgb {
   syntax: "<number>+";
   inherits: false;
   initial-value: 45 167 180;
 }
 
-@property --theme-color-ripples-hex {
+@property --theme-ripples-color {
   syntax: "<color>";
   inherits: false;
   initial-value: #2DA7B4;
@@ -169,28 +166,29 @@ body {
 }
 
 a {
-  --current-gradient-color1: rgb(var(--theme-color) / 0%);
-  --current-gradient-color2: rgb(var(--theme-color) / 0%);
+  --current-gradient-color1: rgb(var(--current-theme-rgb) / 0%);
+  --current-gradient-color2: rgb(var(--current-theme-rgb) / 0%);
   color: var(--body-link-color);
-  background: linear-gradient(135deg, var(--current-gradient-color1), var(--current-gradient-color2)) white;
+  background: linear-gradient(135deg, var(--current-gradient-color1), var(--current-gradient-color2));
   border-color: var(--current-gradient-color1);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
-  transition: color 0.1s, background-color 0.1s, border-color 0.1s, --current-gradient-color1 0.1s, --current-gradient-color2 0.1s;
+  transition: color 0.1s, background-color 0.1s, border-color 0.1s, box-shadow 0.1s, --current-gradient-color1 0.1s, --current-gradient-color2 0.1s;
   text-decoration: none;
 
   &:hover {
-    --current-gradient-color1: rgb(var(--theme-color) / 7%);
-    --current-gradient-color2: rgb(var(--theme-color) / 17%);
+    --current-gradient-color1: rgb(var(--current-theme-rgb) / 7%);
+    --current-gradient-color2: rgb(var(--current-theme-rgb) / 17%);
   }
 }
 
 .btn-nav {
-  display: inline-block;
   color: rgba(white, 1);
-  background-color: rgba(black, 0.3);
+  background: rgba(black, 0.3);
   border-color: rgba(white, 0.6);
+
+  display: inline-block;
   margin-bottom: 1rem;
 
   + .btn-nav {
@@ -224,18 +222,13 @@ a {
 
   &:hover {
     color: rgba(black, 1);
-    background-color: rgba(white, 0.6);
+    background: rgba(white, 0.6);
     border-color: rgba(white, 0.9);
   }
 }
 
 .btn-articlelist {
-  --current-gradient-color1: rgb(var(--theme-color) / 25%);
-  --current-gradient-color2: rgb(var(--theme-color) / 5%);
   display: block;
-  color: rgba(black, 1.0);
-  background: linear-gradient(0deg, var(--current-gradient-color1), var(--current-gradient-color2)) white;
-  border-color: var(--current-gradient-color1);
   margin-bottom: 1rem;
 
   @include large {
@@ -252,20 +245,10 @@ a {
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
-
-  &:hover {
-    --current-gradient-color1: rgb(var(--theme-color) / 40%);
-    --current-gradient-color2: rgb(var(--theme-color) / 7%);
-  }
 }
 
 .btn-taglist {
-  --current-gradient-color1: rgb(var(--theme-color) / 25%);
-  --current-gradient-color2: rgb(var(--theme-color) / 5%);
   display: inline-block;
-  color: rgba(black, 1.0);
-  background: linear-gradient(0deg, var(--current-gradient-color1), var(--current-gradient-color2)) white;
-  border-color: var(--current-gradient-color1);
   margin-bottom: 0.4rem;
 
   + .btn-taglist {
@@ -283,10 +266,18 @@ a {
   @include small {
     padding: 0.1rem 0.7rem;
   }
+}
+
+.btn-articlelist, .btn-taglist {
+  --current-gradient-color1: rgb(var(--current-theme-rgb) / 25%);
+  --current-gradient-color2: rgb(var(--current-theme-rgb) / 5%);
+  color: rgba(black, 1.0);
+  background: linear-gradient(0deg, var(--current-gradient-color1), var(--current-gradient-color2));
+  border-color: var(--current-gradient-color1);
 
   &:hover {
-    --current-gradient-color1: rgb(var(--theme-color) / 40%);
-    --current-gradient-color2: rgb(var(--theme-color) / 7%);
+    --current-gradient-color1: rgb(var(--current-theme-rgb) / 40%);
+    --current-gradient-color2: rgb(var(--current-theme-rgb) / 7%);
   }
 }
 
@@ -308,25 +299,6 @@ a {
   @include small {
     padding: 1rem;
   }
-}
-
-.particles-js > canvas {
-  background: linear-gradient(120deg, var(--theme-color-particles-header1), var(--theme-color-particles-header2)) var(--theme-color-particles-hex);
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-
-.jquery-ripples {
-  background: url("/header-ripples.jpg") center center / cover no-repeat var(--theme-color-ripples-hex);
-}
-
-.jquery-ripples .btn-nav {
-    box-shadow: 0 0 20px rgba(white, 0.8);
-}
-
-.jquery-ripples .btn-nav:hover {
-    box-shadow: 0 0 20px rgba(white, 1);
 }
 
 .project-name {
@@ -616,4 +588,25 @@ a {
 
   @include small {
   }
+}
+
+// Themes
+
+.particles-js > canvas {
+  background: linear-gradient(120deg, var(--theme-particles-color), var(--theme-particles-color2));
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.jquery-ripples {
+  background: url("/header-ripples.jpg") center center / cover no-repeat var(--theme-ripples-color);
+}
+
+.jquery-ripples .btn-nav {
+  box-shadow: 0 0 10px rgba(white, 0.5);
+}
+
+.jquery-ripples .btn-nav:hover {
+  box-shadow: 0 0 20px rgba(white, 1);
 }
