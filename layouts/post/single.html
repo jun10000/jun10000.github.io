@@ -18,11 +18,10 @@
   {{ .Content }}
   {{ partial "disqus.html" . }}
 
-  <!-- ofuse, Tags -->
+  <!-- Tags -->
   {{ $tags := slice }}
   {{ with .Params.tags }}
     <hr>
-    コメントは<a href="https://ofuse.me/jun0" target="_blank" rel="noopener">こちら</a>にどうぞ！<br>
     <div style="margin-top: 1em;">
       <strong>タグ：</strong>{{ range . }}{{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}<a href="{{ $href }}" class="btn-taglist">{{.}}</a>{{ end }}
     </div>
