@@ -39,12 +39,16 @@ pygmentsStyle = "pygments"
     url = "https://github.com/jun10000"
     weight = 2
   [[menu.nav]]
+    name = "Bluesky"
+    url = "https://bsky.app/profile/jun100.bsky.social"
+    weight = 3
+  [[menu.nav]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 4
 
 [markup]
   [markup.tableOfContents]
     ordered = true
     startLevel = 2
-    endLevel = 3
+    endLevel = 4
