@@ -44,6 +44,8 @@ date: 2022-09-15T00:00:00+09:00
   by [DinosoftLabs](https://icon-icons.com/users/WOy9WPlx0QfY0qGdIjvwQ/icon-sets/)
 - [Abstract, Waves, Background](https://pixabay.com/illustrations/abstract-waves-background-wallpaper-5719527/)
   by [tommyvideo](https://pixabay.com/users/tommyvideo-3092371/)
+- [洋紙](https://www.beiz.jp/%E7%B4%A0%E6%9D%90/%E7%B4%99/00319.html)
+  by [BEIZ images](https://www.beiz.jp/)
 
 Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).  
 Copyright © 2022- Jun's GamingBlog All Rights Reserved.
