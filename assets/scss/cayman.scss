@@ -10,6 +10,12 @@
   initial-value: gray;
 }
 
+@property --current-gradient-bg-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
 // Used for startup.js
 @property --current-theme-rgb {
   syntax: "<number>+";
@@ -47,6 +53,12 @@
   syntax: "<color>";
   inherits: false;
   initial-value: #2DA7B4;
+}
+
+@property --transition-seconds {
+  syntax: "<time>";
+  inherits: false;
+  initial-value: 0.1s;
 }
 
 @property --headings-text-color {
@@ -169,18 +181,27 @@ body {
 a {
   --current-gradient-color1: rgb(var(--current-theme-rgb) / 0%);
   --current-gradient-color2: rgb(var(--current-theme-rgb) / 0%);
+  --current-gradient-bg-alpha: 0%;
   color: var(--body-link-color);
-  background: linear-gradient(135deg, var(--current-gradient-color1), var(--current-gradient-color2));
+  background: linear-gradient(135deg, var(--current-gradient-color1), var(--current-gradient-color2)) rgba(white, var(--current-gradient-bg-alpha));
   border-color: var(--current-gradient-color1);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
-  transition: color 0.1s, background-color 0.1s, border-color 0.1s, box-shadow 0.1s, --current-gradient-color1 0.1s, --current-gradient-color2 0.1s;
+  transition:
+    color var(--transition-seconds),
+    background-color var(--transition-seconds),
+    border-color var(--transition-seconds),
+    box-shadow var(--transition-seconds),
+    --current-gradient-color1 var(--transition-seconds),
+    --current-gradient-color2 var(--transition-seconds),
+    --current-gradient-bg-alpha var(--transition-seconds);
   text-decoration: none;
 
   &:hover {
     --current-gradient-color1: rgb(var(--current-theme-rgb) / 7%);
     --current-gradient-color2: rgb(var(--current-theme-rgb) / 17%);
+    --current-gradient-bg-alpha: 100%;
   }
 }
 
@@ -273,7 +294,7 @@ a {
   --current-gradient-color1: rgb(var(--current-theme-rgb) / 25%);
   --current-gradient-color2: rgb(var(--current-theme-rgb) / 5%);
   color: rgba(black, 1.0);
-  background: linear-gradient(0deg, var(--current-gradient-color1), var(--current-gradient-color2));
+  background: linear-gradient(0deg, var(--current-gradient-color1), var(--current-gradient-color2)) white;
   border-color: var(--current-gradient-color1);
 
   &:hover {
