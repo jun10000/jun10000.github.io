@@ -23,6 +23,36 @@
   initial-value: 255 255 255;
 }
 
+@property --current-messagebox-rgb {
+  syntax: "<number>+";
+  inherits: false;
+  initial-value: 0 0 0;
+}
+
+@property --current-messagebox-stripe-color1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: white;
+}
+
+@property --current-messagebox-stripe-color2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: white;
+}
+
+@property --current-messagebox-stripe-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 3px;
+}
+
+@property --current-messagebox-border-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: black;
+}
+
 // Used for startup.js
 @property --theme-particles-rgb {
   syntax: "<number>+";
@@ -356,6 +386,25 @@ a {
   @include small {
     font-size: 1rem;
   }
+}
+
+.messagebox {
+  --current-messagebox-stripe-color1: rgb(var(--current-messagebox-rgb) / 3%);
+  --current-messagebox-stripe-color2: rgb(var(--current-messagebox-rgb) / 10%);
+  --current-messagebox-border-color: rgb(var(--current-messagebox-rgb) / 80%);
+  background: repeating-linear-gradient(
+    var(--current-messagebox-stripe-color1),
+    var(--current-messagebox-stripe-color1) var(--current-messagebox-stripe-width),
+    var(--current-messagebox-stripe-color2) var(--current-messagebox-stripe-width),
+    var(--current-messagebox-stripe-color2) calc(var(--current-messagebox-stripe-width) * 2)) white;
+  border: 3px solid var(--current-messagebox-border-color);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.messagebox-red {
+  --current-messagebox-rgb: 255 16 0;
 }
 
 .main-content {
