@@ -125,7 +125,9 @@
                 </table>
                 <span id="starterOtherStatus" hidden>もうすぐ始まります...</span>
             </div>
-            <img id="fullscreenButton" src="/fullscreen.png" onClick="ToggleFullscreen();"></img>
+            {{ if ne (.Get "fullscreenbtn") "" }}
+                <img id="fullscreenButton" src="/fullscreen.png" onClick="ToggleFullscreen();"></img>
+            {{ end }}
         </body>
         </html>
     '></iframe>
