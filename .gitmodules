@@ -1,6 +1,3 @@
 [submodule "themes/cayman-hugo-theme"]
 	path = themes/cayman-hugo-theme
 	url = https://github.com/zwbetz-gh/cayman-hugo-theme.git
-[submodule "static/particles.js"]
-	path = static/particles.js
-	url = https://github.com/VincentGarreau/particles.js/
