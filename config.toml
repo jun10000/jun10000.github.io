@@ -39,13 +39,17 @@ pygmentsStyle = "pygments"
     url = "https://github.com/jun10000"
     weight = 2
   [[menu.nav]]
-    name = "Bluesky"
-    url = "https://bsky.app/profile/jun100.bsky.social"
+    name = "メルカリ"
+    url = "https://jp.mercari.com/user/profile/161989514"
     weight = 3
   [[menu.nav]]
     name = "About"
     url = "/about/"
     weight = 4
+  [[menu.nav]]
+    name = "お問い合わせ"
+    url = "https://bsky.app/profile/jun100.bsky.social"
+    weight = 5
 
 [markup]
   [markup.tableOfContents]
