@@ -233,6 +233,11 @@ a {
     --current-gradient-color2: rgb(var(--current-theme-rgb) / 17%);
     --current-gradient-bg-alpha: 100%;
   }
+
+  &:has(img) {
+    background: transparent;
+    border: none;
+  }
 }
 
 .btn-nav {
