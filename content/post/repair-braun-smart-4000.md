@@ -84,7 +84,7 @@ tags: ["分解", "電動歯ブラシ"]
 {{< imgur >}}gxylQuP{{< /imgur >}}
 {{< imgur >}}rvJPM0Y{{< /imgur >}}
 
-## モーターの分離
+### モーターの分離
 とりあえずこれのツメを外します。  
 {{< imgur >}}enkDKhB{{< /imgur >}}
 {{< imgur >}}CmUEz8L{{< /imgur >}}
