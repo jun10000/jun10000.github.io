@@ -1,1 +1,0 @@
-# jun10000.github.io
